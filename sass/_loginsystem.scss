@@ -1,0 +1,101 @@
+.login-system-container {
+  min-height: 100vh;
+  display: flex;
+
+  .login-system-hero-container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    flex: 1;
+
+    .login-system-nav {
+      display: flex;
+      // justify-content: flex-start;
+      align-items: center;
+      height: 80px;
+      width: 350px;
+      // border: 2px solid red;
+
+      font-size: 26px;
+      font-weight: 500;
+    }
+
+    .login-system-hero {
+      padding-top: 50px;
+      //   margin: 100px;
+      width: 350px;
+      // border: 2px solid red;
+
+      h2 {
+        font-size: 26px;
+        font-weight: 500;
+      }
+      .login-system-sub-head {
+        margin-top: 10px;
+        font-size: 14px;
+        color: rgb(171, 171, 171);
+      }
+
+      // p {
+      //   margin-top: 10px;
+      //   font-size: 14px;
+      //   color: rgb(171, 171, 171);
+      // }
+
+      .login-system-form {
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0 10px 0;
+
+        label {
+          margin: 10px 0;
+          font-size: 14px;
+          font-weight: 500;
+          color: $primary-color;
+        }
+
+        input {
+          padding: 10px;
+          border-radius: 10px;
+          border: 1.4px solid $secondary-color;
+        }
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 14px;
+
+          padding: 15px;
+          background: $primary-color;
+          color: $secondary-color;
+          border-radius: 10px;
+          cursor: pointer;
+          margin: 15px 0;
+        }
+      }
+      .login-system-error {
+        font-size: 14px;
+        width: fit-content;
+        margin: auto;
+      }
+      .login-prompt {
+        color: rgb(145, 145, 145);
+      }
+    }
+  }
+
+  .login-system-image-container {
+    flex: 1;
+    background: url("../assets/images/login-system.jpg") no-repeat center;
+    background-size: cover;
+  }
+  // img {
+  //   width: 100%;
+  //   height: 100%;
+  //   background-size: cover;
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  // }
+}

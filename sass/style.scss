@@ -1,0 +1,32 @@
+@import "defaults";
+@import "variables";
+@import "utility";
+@import "modals";
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-variation-settings: "slnt" 0;
+}
+
+.container {
+  // height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-site-area {
+  width: 80%;
+
+  section {
+    padding: 0 2%;
+  }
+}
+
+// i {
+//   cursor: pointer;
+// }
+@import "sidebar";
+@import "hero";
+@import "loginsystem";

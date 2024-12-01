@@ -1,0 +1,54 @@
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.items-center {
+  align-items: center;
+}
+.mx-2 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.text-black {
+  color: black;
+}
+.text-red {
+  color: red;
+}
+
+@mixin svgHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  flex: 0;
+  padding: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background: $hover-grey-light;
+  }
+  &:active {
+    background: $hover-grey-dark;
+  }
+}
